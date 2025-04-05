@@ -69,14 +69,14 @@ resources: {}
 # This is to setup the liveness and readiness probes more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
 livenessProbe:
   httpGet:
-    path: /samplepython/health/live
+    path: /drizzlepython/health/live
     port: 8080
   initialDelaySeconds: 30
   periodSeconds: 10
 
 readinessProbe:
   httpGet:
-    path: /samplepython/health/ready
+    path: /drizzlepython/health/ready
     port: 8080
   initialDelaySeconds: 30
   periodSeconds: 10
@@ -109,9 +109,9 @@ tolerations: []
 affinity: {}
 
 virtualservice:
-  ingressGateway: istio-system/meghdo-4567-ingress-gateway
-  hosts: meghdo.cloud
-  prefix: samplepython
+  ingressGateway: istio-system/meghdo-ingress-gateway
+  hosts: meghdo.co.uk
+  prefix: drizzlepython
 
 
 database:
