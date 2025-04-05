@@ -8,7 +8,7 @@ commonPipeline (
     region: "us-east-1",
     appName: "drizzlepython",
     namespace: "default",
-    scanOWASP: "false",  // OWASP Scanning takes about 7-10 min of scanning time, turn on when scanning is needed
+    scanOWASP: "true",  // OWASP Scanning takes about 7-10 min of scanning time, turn on when scanning is needed
     label: 'python'
 ) {
     container('python') { 
