@@ -114,7 +114,6 @@ virtualservice:
 
 database:
   enabled: true
-  tag: latest
   db_name: "meghdo_database"
   db_user: "dbuser"
   db_host: "meghdo-instance.ca9m0486s1c6.us-east-1.rds.amazonaws.com"
